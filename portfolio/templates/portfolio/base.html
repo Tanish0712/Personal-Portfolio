@@ -9,11 +9,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
+  <link rel="stylesheet" href="{% static 'portfolio/custom.css' %}">
 
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" href="{% static "portfolio/Logo.png" %}">
+  <link rel="icon" type="image/png" href="{% static 'portfolio/Logo.png' %}">
 
   <title>Tanish Lahoti</title>
 </head>
@@ -23,7 +23,7 @@
   <nav id="topNav" class="navbar navbar-expand-md navbar-light">
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static "portfolio/Logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Tanish's Logo">
+        <img src="{% static 'portfolio/Logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="Tanish's Logo">
         <span>Tanish Lahoti</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +33,9 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="https://www.upwork.com/o/profiles/users/~018760c72ff1592e13/" target="_blank">Upwork</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'youtube:home' %}" target="_blank">Youtube channel</a>
           </li>
           <li>
             <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
